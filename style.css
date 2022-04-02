@@ -1,0 +1,182 @@
+body{
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+.custom-radios div {
+    display: grid;
+  }
+  .div-for-margin-border {
+    border: 2px solid rgb(15, 15, 15);
+    border-radius: 10px;
+  }
+  .custom-radios {
+    margin: 50px 50px 50px 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .custom-radios input[type="radio"] {
+    display: none;
+  }
+  .custom-radios input[type="radio"] + label {
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: auto auto auto auto;
+  }
+  .custom-radios input[type="radio"] + label span {
+    align-items: flex-end;
+    display: flex;
+    width: 125px;
+    height: 125px;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 13px;
+    line-height: 25px;
+  }
+  .custom-radios div.boreder-black input[type="radio"] + label {
+    transition: all 0.3s ease;
+    border: 1px solid #000000;
+    border-radius: 20px;
+  }
+  .custom-radios input[type="radio"]#color-3 + label span {
+    background-color: #00a652;
+  }
+  .custom-radios input[type="radio"]#color-4 + label span {
+    background-color: #ff7fc2;
+    
+  }
+  .custom-radios input[type="radio"]#color-5 + label span {
+    background-color: #006dfe;
+  }
+  .custom-radios div.boreder-black input[type="radio"]:checked + label {
+    border-radius: 20px;
+    border: 1px solid silver;
+  }
+  .custom-radios
+    div.boreder-black
+    input[type="radio"]:checked
+    + label
+    + ul.silver-font-checked-radio
+    li {
+    color: silver;
+    transition: all 0.3s ease;
+  }
+  .letter-form-enter {
+    text-align: end;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.226);
+  }
+  .silver-font-checked-radio {
+    font-size: 20px;
+    list-style: none;
+    padding-left: 60px;
+  }
+  .boreder-black {
+    width: 200px;
+  }
+  
+  li::before {
+    content: "\2022";
+    color: #98a2b2;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-weight: 900;
+  }
+  .select-font-title {
+    color: black;
+  }
+  .flex-title-fonts {
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    align-items:baseline
+  }
+  .acces-font-style{
+display: grid;
+grid-template-columns: auto auto ;
+column-gap: 20px;
+color: #98a2b2;
+cursor: pointer;
+
+  }
+  .link-my-fonts:hover, .link-buy-fonts:hover{
+    color:rgb(253 83 13);
+    transition: all 0.3s ease;
+  }
+  .an-dummy-text{
+    text-align: center;
+  }
+  .display-none{
+    display: none;
+  }
+  
+  @media only screen and (max-width: 730px) and (min-width: 490px) {
+    .custom-radios {
+        grid-template-columns: auto auto ;
+        row-gap: 1ch;
+      }
+      .boreder-black {
+        width: auto;}
+        .box3{
+          grid-column-start: 1;
+          grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        }
+      .box4,.box5{
+        grid-template-columns: auto auto ;
+        row-gap: 1ch;
+        height: max-content;
+      }
+      
+      .custom-radios input[type="radio"]#color-4 + label span,.custom-radios input[type="radio"]#color-5 + label span {
+        align-items: flex-end;
+        display: flex;
+        width: 62.5px;
+        height: 62.5px;
+        vertical-align: middle;
+        cursor: pointer;
+        border-radius: 10px;
+        border: 5px solid #fff;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-left: 6.5px;
+        line-height: 12.5px;
+      }
+      .custom-radios div.boreder-black input[type="radio"]#color-4 + label, .custom-radios div.boreder-black input[type="radio"]#color-5 + label  {
+        transition: all 0.3s ease;
+         border: 1px solid #000000; 
+        border-radius: 10px;
+      }
+      .custom-radios div.boreder-black input[type="radio"]#color-4:checked + label,.custom-radios div.boreder-black input[type="radio"]#color-5:checked + label {
+        border-radius: 10px;
+        border: 1px solid silver;
+      }
+      .custom-radios input[type="radio"]#color-4 + label span h1,.custom-radios input[type="radio"]#color-5 + label span h1{
+        font-weight: 350;
+        font-size: 20px;
+        margin-bottom: 7.5px;
+      }
+     
+  }
+  @media only screen and (max-width: 490px) {
+    .custom-radios {
+        grid-template-columns: auto ;
+        row-gap: 1ch;
+        justify-items: center;
+        margin: 50px auto 50px auto;
+      }
+      .box5{
+        grid-column-start: initial;
+        grid-row-start: initial;
+        grid-row-end: initial;
+      }
+  }
